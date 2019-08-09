@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+ html {
+    font-size: 62.5%; }
+  
+body {
+    box-sizing: border-box; }
+body {
+    font-family: "lato",sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #777;
+    padding: 2rem; }
+.text-white{
+        position:absolute; 
+        top:3.5rem; 
+        left:18.5rem; 
+        font-family: 'Josefin Slab', sans-serif; font-size: 4.5rem;
+}
+.fund-text{
+    position:absolute; 
+    top:9rem; 
+    left:18.5rem; 
+    width:110rem ; 
+    font-family: 'Aclonica'; 
+    font-size: 1.5rem; 
+    color:#ffff00;
+}
+
+.grid-test {
+    text-align: center; }
+  
+  .row {
+    max-width: 114rem;
+    margin: 0 auto; }
+    .row:first-child {
+      margin-top: 8rem; }
+    .row:not(:last-child) {
+      margin-bottom: 8rem; }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .row [class^=column-] {
+      float: left; }
+      .row [class^=column-]:not(:last-child) {
+        margin-right: 4rem; }
+    .row .column-1-of-2 {
+      width: calc((100% - 4rem)/2); }
+    .row .column-1-of-3 {
+      width: calc((100% - 2*4rem)/3); }
+    .row .column-1-of-4 {
+      width: calc((100% - 3 * 4rem)/4); }
+    .row .column-2-of-3 {
+      width: calc(2 * ((100% - 2*4rem)/3) + 4rem); }
+    .row .column-2-of-4 {
+      width: calc(2 * ((100% - 3 * 4rem) / 4) + 4rem); }
+    .row .column-3-of-4 {
+      width: calc(3 * ((100% - 3 * 4rem) / 4) + 2 * 4rem); }
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right, #3fdb2334, #3d863d18), url( '../assets/images/plantsbg.jpg');
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    position: relative;
+     align-content:center;
+    height:180px;
+     }
+     .header__logo-box {
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem; }
+      .header__logo {
+        height: 15rem; }
+        .header__logo-box1 {
+            position: absolute;
+            top: 1rem;
+            left: 60rem; 
+        width: 10rem;
+
+    }
+          .header__logo1 {
+            height: 15rem; }
+          
+        .heading-primary {
+            display: inline-block;
+            color: #fff;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            text-align: center;
+            margin-bottom: 5rem;
+            /* margin-left: 25rem; */
+            backface-visibility: hidden; }
+            .heading-primary--main {
+              display: block;
+              font-size: 3rem;
+              font-weight: 700;
+              letter-spacing: 1rem;
+              animation-name: moveInLeft;
+              animation-duration: 1s;
+              margin-bottom: 1.5rem;
+              animation-timing-function: ease-out; }
+            .heading-primary--sub {
+              display: block;
+              font-size: 1.5rem;
+              font-weight: 300;
+              letter-spacing: .3rem;
+              margin-bottom: 1.5rem;
+              animation: moveInRight 1s ease-out; }
+          
+              @keyframes moveInRight {
+                0% {
+                  opacity: 0;
+                  transform: translateX(10rem); }
+                80% {
+                  transform: translateX(-1rem); }
+                100% {
+                  opacity: 1;
+                  transform: translate(0); } }
+              
+              @keyframes moveInLeft {
+                0% {
+                  opacity: 0;
+                  transform: translateX(-10rem); }
+                80% {
+                  transform: translateX(1rem); }
+                100% {
+                  opacity: 1;
+                  transform: translate(0); } }
+.heading-primary--sub1{
+            display: block;
+              font-size: 1.5rem;
+              font-weight: 300;
+              letter-spacing: 0rem;
+              animation: moveInRight 1s ease-out;
+}
+
+/* .form-box{
+    margin-left:100rem} */
